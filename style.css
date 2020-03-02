@@ -31,14 +31,41 @@ a:hover, a:active {
 	color: #FF9933;
 }
 
-section {
-	height: 100vh;
-}
-
-section:nth-child(2n) {
-	background: rgba(0, 0, 0, 0.02);
-}
-
-#background {
+#fooxes-background {
 	background-image: url("images/tails.svg");
 }
+
+/*
+* SCROLL SNAPPING
+* The whole website scrolls in full heights and snaps to h2
+*/
+
+html {
+	scroll-snap-type: y mandatory;
+}
+
+section {
+	height: 100vh;
+	position: relative;
+	scroll-snap-align: start;  /* snap to the start (top) of the viewport */
+}
+
+.fooxes-container {
+	position: absolute;
+	width: 1024px;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+#fooxes-background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 9317px;
+	margin-top: 100vh;
+	z-index: -1;
+}
+
+/* END: SCROLL SNAPPING */

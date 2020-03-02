@@ -1,3 +1,3 @@
-/**
- * Created by hanneskl on 01/03/2020.
- */
+window.addEventListener('scroll', function(e) {
+  document.getElementById("fooxes-background").style.top = -window.pageYOffset / 2 + "px";
+});
