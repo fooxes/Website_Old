@@ -31,8 +31,9 @@ a:hover, a:active {
 	color: #FF9933;
 }
 
-#fooxes-background {
-	background-image: url("images/tails.svg");
+.fooxes-background {
+	background-image: url("images/background.jpg");
+	/* TODO: Benchmark rendering performance against .jpg */
 }
 
 /*
