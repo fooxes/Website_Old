@@ -80,7 +80,7 @@ html {
 }
 
 .header__link:hover {
-    color: black;
+	color: black;
 }
 
 /* END: HEADER */
@@ -116,6 +116,10 @@ html {
 	line-height: normal;
 }
 
+.headline--text-white {
+	color: white;
+}
+
 .subline {
 	font-size: 16px;
 	color: #9B9B9B;
@@ -125,10 +129,18 @@ html {
 	text-transform: uppercase;
 }
 
+.subline--text-white {
+	color: white;
+}
+
 .description {
 	margin: 0;
 	margin-bottom: 24px;
 	line-height: 2;
+}
+
+.description--text-white {
+	color: white;
 }
 
 .button {
@@ -170,5 +182,16 @@ html {
 	margin-left: 48px;
 }
 
-
 /* END: HERO */
+
+/* WHITE TEXT
+ * To amaze the world we add a svg mask on top of duplicate white text to show white text on the dark parts of the background
+ */
+
+.container--text-white {
+	-webkit-mask-image: url(images/mask.svg);
+	-webkit-mask-size: 1407px;
+	-webkit-mask-position-x: -653px;
+	-webkit-mask-position-y: -110px;
+	-webkit-mask-repeat: no-repeat;
+}
