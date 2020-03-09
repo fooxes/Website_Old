@@ -7,6 +7,9 @@
 	margin: 0;
 	padding: 0;
 	background-image: url("images/background.jpg");
+	background-position-y: 100vh;
+	background-position-x: center;
+	background-repeat: repeat-y;
 	/* TODO: Benchmark rendering performance against .jpg */
 }
 
@@ -100,3 +103,72 @@ html {
 }
 
 /* END: SECTIONS */
+
+/* GENERAL UI ELEMENTS */
+
+.headline {
+	font-size: 36px;
+	color: #4A4A4A;
+	margin: 0;
+	margin-bottom: 24px;
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: normal;
+}
+
+.subline {
+	font-size: 16px;
+	color: #9B9B9B;
+	margin: 0;
+	margin-bottom: 24px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.description {
+	margin: 0;
+	margin-bottom: 24px;
+	line-height: 2;
+}
+
+.button {
+	background-image: linear-gradient(180deg, #FEC435 0%, #E9411A 100%);
+	border: 2px solid #FFFFFF;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10), 0 8px 48px 0 rgba(0,0,0,0.20);
+	border-radius: 32px;
+	font-weight: 800;
+	font-size: 16px;
+	color: #FFFFFF;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 16px;
+}
+
+/* LAYOUTS */
+
+.headline--columns-left{
+	float: left;
+	width: 25%;
+}
+
+.description--columns-right {
+	float: left;
+	width: 75%;
+}
+
+/* END:LAYOUTS */
+
+/* HERO */
+
+.hero {
+	background: white;
+}
+
+.hero__image {
+	width: 50%;
+	float: right;
+	margin-left: 48px;
+}
+
+
+/* END: HERO */
