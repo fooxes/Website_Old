@@ -91,6 +91,7 @@ html {
 	height: 100vh;
 	position: relative;
 	scroll-snap-align: start;  /* snap to the start (top) of the viewport */
+	overflow: hidden;
 }
 
 /* Center content vertically and horizontally */
@@ -186,14 +187,29 @@ html {
 
 /* LAYOUTS */
 
-.headline--columns-left{
+.headline--width-50-percent {
+	float: left;
+	width: 50%;
+}
+
+.headline--width-25-percent {
 	float: left;
 	width: 25%;
 }
 
-.description--columns-right {
+.description--width-50-percent{
+	float: left;
+	width: 50%;
+}
+
+.description--width-75-percent{
 	float: left;
 	width: 75%;
+}
+
+.container--width-50-percent{
+	float: left;
+	width: 50%;
 }
 
 /* END:LAYOUTS */
@@ -222,4 +238,80 @@ html {
 	-webkit-mask-position-x: -653px;
 	-webkit-mask-position-y: -110px;
 	-webkit-mask-repeat: no-repeat;
+}
+
+/* EXAMPLES*/
+
+.examples__list-item {
+	width: 50%;
+	float: left;
+}
+
+.examples__screenshots {
+	position: relative;/* To position the screenshots at different x levels*/
+}
+
+.examples__screenshots-item {
+	width: 575px;
+	position: absolute;
+	left: -20%;
+	top: 0;
+	animation: animate infinite backwards;
+}
+@keyframes animate {
+	0% {
+		transform: translate(0, -200%);
+	}
+	100% {
+		transform: translate(0, 100%);
+	}
+}
+
+/* Have them come in at different X levels */
+.examples__screenshots-item:nth-of-type(6n + 1) {
+	left: 10%;
+}
+.examples__screenshots-item:nth-of-type(6n + 2) {
+	left: 20%;
+}
+.examples__screenshots-item:nth-of-type(6n + 3) {
+	left: 30%;
+}
+.examples__screenshots-item:nth-of-type(6n + 4) {
+	left: 40%;
+}
+.examples__screenshots-item:nth-of-type(6n + 5) {
+	left: 50%;
+}
+
+.examples__screenshots-item:nth-of-type(3n) {
+	animation-duration: 30s;
+}
+.examples__screenshots-item:nth-of-type(3n + 1) {
+	animation-duration: 25s;
+}
+.examples__screenshots-item:nth-of-type(3n + 2) {
+	animation-duration: 35s;
+}
+
+.examples__screenshots-item:nth-of-type(1) { animation-delay: -16s; }
+.examples__screenshots-item:nth-of-type(2) { animation-delay: -14s; }
+.examples__screenshots-item:nth-of-type(3) { animation-delay: -12s; }
+.examples__screenshots-item:nth-of-type(4) { animation-delay: -10s; }
+.examples__screenshots-item:nth-of-type(5) { animation-delay: -8s; }
+.examples__screenshots-item:nth-of-type(6) { animation-delay: -6s; }
+.examples__screenshots-item:nth-of-type(7) { animation-delay: -4s; }
+.examples__screenshots-item:nth-of-type(8) { animation-delay: -2s; }
+.examples__screenshots-item:nth-of-type(9) { animation-delay: 0s; }
+.examples__screenshots-item:nth-of-type(10) { animation-delay: 2s; }
+.examples__screenshots-item:nth-of-type(11) { animation-delay: 4s; }
+.examples__screenshots-item:nth-of-type(12) { animation-delay: 6s; }
+.examples__screenshots-item:nth-of-type(13) { animation-delay: 8s; }
+.examples__screenshots-item:nth-of-type(14) { animation-delay: 10s; }
+.examples__screenshots-item:nth-of-type(15) { animation-delay: 12s; }
+.examples__screenshots-item:nth-of-type(16) { animation-delay: 15s; }
+.examples__screenshots-item:nth-of-type(17) { animation-delay: 17s; }
+
+div {
+  animation-delay: 2s;
 }
