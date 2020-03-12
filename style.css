@@ -242,17 +242,12 @@ html {
 
 /* EXAMPLES*/
 
-.examples__list-item {
-	width: 50%;
-	float: left;
-}
-
 .examples__screenshots {
 	position: relative;/* To position the screenshots at different x levels*/
 }
 
 .examples__screenshots-item {
-	width: 575px;
+	width: 375px;
 	position: absolute;
 	left: -20%;
 	top: 0;
@@ -315,3 +310,26 @@ html {
 div {
   animation-delay: 2s;
 }
+
+.example-icons{
+	padding: 0;
+}
+
+.examples__list-item {
+	list-style-type: none;
+	width: 50%;
+	float: left;
+	margin-bottom: 16px;
+}
+
+.examples__list-item-icon {
+	float: left;
+	width: 24px;
+	height: 24px;
+}
+.examples__list-item-label {
+	float: left;
+	padding: 3px 16px;
+}
+
+/* END: EXAMPLES */
