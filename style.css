@@ -98,6 +98,7 @@ html {
 	position: relative;
 	scroll-snap-align: start;  /* snap to the start (top) of the viewport */
 	overflow: hidden;
+	/* scroll-snap-type: x mandatory; */
 }
 
 /* Center content vertically and horizontally */
@@ -248,17 +249,43 @@ html {
 
 /* EXAMPLES*/
 
+.slider {
+	display: flex;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	/* position: absolute; */
+	/* top: 0; */
+	/* bottom: 0; */
+	/* right: 0; */
+	/* left: 0; */
+	/* display: block; */
+	/* background: green; */
+	width: 100vw;
+	height: 100vh;
+	overflow-y: hidden;
+}
+
+.slide {
+	scroll-snap-align: start;
+	width: 100vw;
+	flex-shrink: 0;
+	height: 100%;
+	position: relative;
+}
+
 .examples__screenshots {
 	position: relative;/* To position the screenshots at different x levels*/
 }
 
 .examples__screenshots-item {
-	width: 375px;
+	/* width: 375px; */
 	position: absolute;
 	left: -20%;
 	top: 0;
 	animation: animate infinite backwards;
-	height: 812px;
+	/* height: 812px; */
 }
 @keyframes animate {
 	0% {
@@ -340,3 +367,13 @@ div {
 }
 
 /* END: EXAMPLES */
+
+/* PAGING INDICATOR */
+
+.paging-indicator {position: absolute;bottom: 24px;left: 50%;z-index: 2;}
+
+.paging-indictor-dot {width: 8px;height: 8px;border-radius: 4px;display: block;background: #b6b6b6;float: left;margin-right: 4px;}
+
+.paging-indictor-dot--active {background: #4A4A4A;}
+
+/* END: PAGING INDICATOR */
