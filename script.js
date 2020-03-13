@@ -4,10 +4,12 @@
  });
  */
 
-/* LAZY LOADING OF IMAGES
- * https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video
- */
 document.addEventListener("DOMContentLoaded", function() {
+
+  /* LAZY LOADING OF IMAGES
+   * https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video
+   */
+
   let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
   let active = false;
 
@@ -40,4 +42,22 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   };
   lazyLoad();
+
+  /* SCROLLING INDICATOR */
+  const slider = document.getElementsByClassName("slider")[0];
+  const firstSlide = slider.children[0];
+  const classPagingIndictorDotActive = "paging-indictor-dot--active";
+  const classPagingIndictorDot = "paging-indictor-dot";
+
+  slider.addEventListener("scroll", function(e) {
+
+    // Remove old active
+    let pagingIndictorDotActive = document.getElementsByClassName(classPagingIndictorDotActive)[0];
+    pagingIndictorDotActive.classList.remove(classPagingIndictorDotActive);
+
+    // Add new active
+    let index = Math.round(slider.scrollLeft / firstSlide.offsetWidth);
+    let pagingIndictorDot = document.getElementsByClassName(classPagingIndictorDot)[index];
+    pagingIndictorDot.classList.add(classPagingIndictorDotActive);
+  });
 });

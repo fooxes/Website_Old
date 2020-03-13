@@ -342,7 +342,7 @@ html {
 .examples__screenshots-item:nth-of-type(17) { animation-delay: 17s; }
 
 div {
-  animation-delay: 2s;
+	animation-delay: 2s;
 }
 
 .example-icons{
@@ -370,9 +370,21 @@ div {
 
 /* PAGING INDICATOR */
 
-.paging-indicator {position: absolute;bottom: 24px;left: 50%;z-index: 2;}
+.paging-indicator {
+	position: absolute;
+	bottom: 24px;
+	left: 50%;
+	z-index: 2;
+}
 
-.paging-indictor-dot {width: 8px;height: 8px;border-radius: 4px;display: block;background: #b6b6b6;float: left;margin-right: 4px;}
+.paging-indictor-dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	display: block;
+	background: #b6b6b6;
+	float: left;margin-right: 4px;
+}
 
 .paging-indictor-dot--active {background: #4A4A4A;}
 
