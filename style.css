@@ -12,6 +12,12 @@
 	background-repeat: repeat-y;
 	/* TODO: Benchmark rendering performance against .jpg */
 }
+.lazy {
+	background-color: #F6F6F6;
+	background-image: url(images/icons/logo.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
 /*
 * SCROLL SNAPPING
@@ -252,6 +258,7 @@ html {
 	left: -20%;
 	top: 0;
 	animation: animate infinite backwards;
+	height: 812px;
 }
 @keyframes animate {
 	0% {
