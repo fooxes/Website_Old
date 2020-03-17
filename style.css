@@ -179,8 +179,7 @@ html {
 	color: white;
 }
 
-.button {
-	background-image: linear-gradient(180deg, #FEC435 0%, #E9411A 100%);
+.button { background-image: linear-gradient(180deg, #FEC435 0%, #E9411A 100%);
 	border: 2px solid #FFFFFF;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10), 0 8px 48px 0 rgba(0,0,0,0.20);
 	border-radius: 32px;
@@ -426,3 +425,35 @@ div {
 }
 
 /* END: ARROWS */
+
+/* CLIENTS */
+
+.clients__items {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.clients__item {
+	width: 33%;
+	background-position: center;
+	height: 100px;
+	background-repeat: no-repeat;
+	/* background: green; */
+	/* border: 1px solid red; */
+	list-style: none;
+	/* display: block; */
+}
+
+.clients__item-1 { background-image: url("images/logos/1.svg"); }
+.clients__item-2 { background-image: url("images/logos/2.svg"); }
+.clients__item-3 { background-image: url("images/logos/3.svg"); }
+.clients__item-4 { background-image: url("images/logos/4.svg"); }
+.clients__item-5 { background-image: url("images/logos/5.svg"); }
+.clients__item-6 { background-image: url("images/logos/6.svg"); }
+.clients__item-7 { background-image: url("images/logos/7.svg"); }
+.clients__item-8 { background-image: url("images/logos/8.svg"); }
+.clients__item-9 { background-image: url("images/logos/9.svg"); }
+
+/* END: CLIENTS */
