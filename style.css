@@ -389,3 +389,40 @@ div {
 .paging-indictor-dot--active {background: #4A4A4A;}
 
 /* END: PAGING INDICATOR */
+
+/* ARROWS */
+
+.arrows {z-index: 2;position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
+
+.arrow {
+	width: 40px;
+	height: 40px;
+	background-image: url("images/icons/arrow.svg");
+	position: absolute;
+	top: 50%;
+	right: 24px;
+	transform: rotate(180deg);
+	opacity: .5;
+	cursor: pointer;
+}
+
+.arrow:hover {
+	opacity: 0.75;
+}
+
+.arrow:active {
+	transform: scale(0.9) rotate(180deg);
+	opacity: 1;
+}
+
+.arrow-left {
+	left: 24px;
+	right: auto;
+	transform: none;
+}
+
+.arrow-left:active {
+	transform: scale(0.9);
+}
+
+/* END: ARROWS */
