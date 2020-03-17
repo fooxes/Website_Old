@@ -426,24 +426,33 @@ div {
 
 /* END: ARROWS */
 
-/* CLIENTS */
+/* GRIDS */
 
-.clients__items {
+
+.grid {
   display: flex;
   padding: 0;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.clients__item {
+.grid-item__columns-2{
+	width: 50%;
+	list-style: none;
+	text-align: center;
+}
+
+.grid-item__columns-3{
 	width: 33%;
+	list-style: none;
+}
+
+/* CLIENTS */
+
+.grid-item__columns-3{
 	background-position: center;
 	height: 100px;
 	background-repeat: no-repeat;
-	/* background: green; */
-	/* border: 1px solid red; */
-	list-style: none;
-	/* display: block; */
 }
 
 .clients__item-1 { background-image: url("images/logos/1.svg"); }
