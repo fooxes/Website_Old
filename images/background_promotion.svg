@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="238px" height="238px" viewBox="0 0 238 238" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-45.8468967%" x2="50%" y2="151.147461%" id="linearGradient-1">
+            <stop stop-color="#FFC636" offset="0%"></stop>
+            <stop stop-color="#E21611" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="72 138.989397 64.9427659 143.6533 58.9310169 137.702215 51.0995032 140.899704 46.3642675 133.890133 38.0594349 135.498331 34.7826849 127.699648 26.3236835 127.656753 24.6313429 119.368657 16.3432474 117.676316 16.3003518 109.217315 8.50166897 105.940565 10.1098669 97.6357325 3.10029583 92.9004968 6.29778516 85.0689831 0.34669968 79.0572341 5.01060268 72 0.34669968 64.9427659 6.29778516 58.9310169 3.10029583 51.0995032 10.1098669 46.3642675 8.50166897 38.0594349 16.3003518 34.7826849 16.3432474 26.3236835 24.6313429 24.6313429 26.3236835 16.3432474 34.7826849 16.3003518 38.0594349 8.50166897 46.3642675 10.1098669 51.0995032 3.10029583 58.9310169 6.29778516 64.9427659 0.34669968 72 5.01060268 79.0572341 0.34669968 85.0689831 6.29778516 92.9004968 3.10029583 97.6357325 10.1098669 105.940565 8.50166897 109.217315 16.3003518 117.676316 16.3432474 119.368657 24.6313429 127.656753 26.3236835 127.699648 34.7826849 135.498331 38.0594349 133.890133 46.3642675 140.899704 51.0995032 137.702215 58.9310169 143.6533 64.9427659 138.989397 72 143.6533 79.0572341 137.702215 85.0689831 140.899704 92.9004968 133.890133 97.6357325 135.498331 105.940565 127.699648 109.217315 127.656753 117.676316 119.368657 119.368657 117.676316 127.656753 109.217315 127.699648 105.940565 135.498331 97.6357325 133.890133 92.9004968 140.899704 85.0689831 137.702215 79.0572341 143.6533"></polygon>
+        <filter x="-59.7%" y="-45.8%" width="219.4%" height="219.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="20" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="25" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-512.000000, -550.000000)">
+            <g id="Elements-/-Promotion" transform="translate(545.000000, 557.000000)">
+                <g id="Group-3" transform="translate(93.000000, 93.000000) rotate(20.000000) translate(-93.000000, -93.000000) translate(21.000000, 21.000000)">
+                    <g id="Star">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                        <use stroke="#FFFFFF" stroke-width="2" fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    </g>
+                    <text id="FREE" font-family="OpenSans-ExtraBold, Open Sans" font-size="24" font-weight="600"></text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
