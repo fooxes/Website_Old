@@ -544,3 +544,41 @@ div {
 .form-checkbox {clear: both;display: block;margin-right: 12px;float: left;/* height: 88px; */transform: scale(1.5);margin-left: 12px;cursor: pointer;}
 
 .form-label {float: left;width: calc(100% - 48px);}
+
+/* END: FORMS */
+
+/* PARTNERS */
+
+.list__theme-partners {
+	margin: 0;
+	padding: 0;
+}
+
+.list-item__theme-partners {
+	list-style: none;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+/* END: PARTNERS */
+
+/* THE BIG PROCESS */
+
+
+.list__theme-big-process{
+	margin: 0;
+	padding: 0;
+}
+
+.list-item__theme-big-process {
+	animation: tail 3000ms infinite alternate ease-in-out;
+}
+
+@keyframes tail {
+	0% {
+		/* TODO: ADD COORDINATES */
+	}
+	100% {
+		/* TODO: ADD COORDINATES */
+	}
+}
