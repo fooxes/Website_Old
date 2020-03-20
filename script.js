@@ -60,6 +60,18 @@ document.addEventListener("DOMContentLoaded", function() {
     let pagingIndictorDot = document.getElementsByClassName(classPagingIndictorDot)[index];
     pagingIndictorDot.classList.add(classPagingIndictorDotActive);
   });
+
+  // ADD HOVER EFFECTS TO SCRUM
+  let elements = document.getElementsByClassName("list-item__theme-scrum");
+  for (let i = 0; i < elements.length; i++) {
+    let element = elements[i];
+    element.addEventListener('mouseover', function(e) {
+      displayScrumItem(e);
+    });
+    element.addEventListener('click', function(e) {
+      displayScrumItem(e);
+    });
+  }
 });
 
 /* EXAMPLE ARROWS */ {
@@ -116,4 +128,53 @@ document.addEventListener("DOMContentLoaded", function() {
   stopAutoScroll = function () {
     clearInterval(timer);
   };
+
+  displayScrumItem = function(e) {
+
+    // Bail, if childelement
+    if (!e.target.classList.contains("list-item__theme-scrum")) {
+      return;
+    }
+
+    var dayIndex = Array.prototype.indexOf.call(e.target.parentNode.children, e.target);
+    console.log(dayIndex);
+
+    let descriptionIndex;
+    switch(dayIndex) {
+      case 0:
+        descriptionIndex = 0;
+        break;
+      case 8:
+        descriptionIndex = 2;
+        break;
+      case 9:
+        descriptionIndex = 3;
+        break;
+      case 10:
+        descriptionIndex = 0;
+        break;
+      case 18:
+        descriptionIndex = 2;
+        break;
+      case 19:
+        descriptionIndex = 3;
+        break;
+      default:
+        descriptionIndex = 1;
+    }
+
+    // Hide all others
+    for (let i = 0; i < 4; i++) {
+      document.getElementsByClassName("subline--theme-scrum")[i].style.display = "none";
+      document.getElementsByClassName("description--theme-scrum")[i].style.display = "none";
+    }
+
+    // Show current one
+    document.getElementsByClassName("subline--theme-scrum")[descriptionIndex].style.display = "block";
+    document.getElementsByClassName("description--theme-scrum")[descriptionIndex].style.display = "block";
+
+    for (let i = 0; i < 20; i++) {
+      document.getElementsByClassName("list-item__theme-scrum")[i].style.animationPlayState = "paused";
+    }
+  }
 }
